@@ -1,0 +1,121 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+</head>
+<body>
+
+<h1>Hospitality: CTI</h1>
+
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #333; 
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.subnav {
+  float: left;
+  overflow: hidden;
+}
+
+.subnav .subnavbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .subnav:hover .subnavbtn {
+  background-color: none;
+}
+
+.subnav-content {
+  display: none;
+  position: absolute;
+  left: 0;
+  background-color: gray;
+  width: 100%;
+  z-index: 1;
+}
+
+.subnav-content a {
+  float: left;
+  color: white;
+  text-decoration: none;
+}
+
+.subnav-content a:hover {
+  background-color: #eee;
+  color: black;
+}
+
+.subnav:hover .subnav-content {
+  display: block;
+}
+</style>
+</head>
+<body>
+
+<div class="navbar">
+  <a href="index.html">Home</a>
+  <div class="subnav">
+    <button class="subnavbtn">Industry Background <i class="fa fa-caret-down"></i></button>
+    <div class="subnav-content">
+      <a href="background.html">Background of Industry</a>
+      <a href="threat.html">Threat Trends</a>
+    </div>
+  </div> 
+  <div class="subnav">
+    <button class="subnavbtn">Threat Modeling <i class="fa fa-caret-down"></i></button>
+    <div class="subnav-content">
+      <a href="cai.html">Critical Asset Identification</a>
+      <a href="models.html">Diamond Models</a>
+      <a href="intel.html">Intelligence Buy-In</a>
+    </div>
+  </div> 
+  <div class="subnav">
+    <button class="subnavbtn">Data <i class="fa fa-caret-down"></i></button>
+    <div class="subnav-content">
+      <a href="sources.html">Sources</a>
+      <a href="str.html">Collection Strategies</a>
+      <a href="sum.html">Collection Summary</a>
+    </div>
+  </div>
+  <a href="about.html">About Us</a>
+</div>
+
+
+<h2>Data Sources</h2>
+<div class="mySlides">
+    <div class="numbertext"></div>
+      <img src="13.png" style="width:100%">
+  </div>
+
+  
+
+
+  <footer>
+    <p>Disclaimer: All content on this site is for educational purposesonly.</p>
+  <footer>
+
+</body>
+</html>

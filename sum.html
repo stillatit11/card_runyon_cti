@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+</head>
+
+<body>
+
+<h1>Hospitality: CTI</h1>
+
+<style>
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: #333; 
+}
+
+.navbar a {
+  float: left;
+  font-size: 16px;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+.subnav {
+  float: left;
+  overflow: hidden;
+}
+
+.subnav .subnavbtn {
+  font-size: 16px;  
+  border: none;
+  outline: none;
+  color: white;
+  padding: 14px 16px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+}
+
+.navbar a:hover, .subnav:hover .subnavbtn {
+  background-color: none;
+}
+
+.subnav-content {
+  display: none;
+  position: absolute;
+  left: 0;
+  background-color: gray;
+  width: 100%;
+  z-index: 1;
+}
+
+.subnav-content a {
+  float: left;
+  color: white;
+  text-decoration: none;
+}
+
+.subnav-content a:hover {
+  background-color: #eee;
+  color: black;
+}
+
+.subnav:hover .subnav-content {
+  display: block;
+}
+</style>
+</head>
+<body>
+
+<div class="navbar">
+  <a href="index.html">Home</a>
+  <div class="subnav">
+    <button class="subnavbtn">Industry Background <i class="fa fa-caret-down"></i></button>
+    <div class="subnav-content">
+      <a href="background.html">Background of Industry</a>
+      <a href="threat.html">Threat Trends</a>
+    </div>
+  </div> 
+  <div class="subnav">
+    <button class="subnavbtn">Threat Modeling <i class="fa fa-caret-down"></i></button>
+    <div class="subnav-content">
+      <a href="cai.html">Critical Asset Identification</a>
+      <a href="models.html">Diamond Models</a>
+      <a href="intel.html">Intelligence Buy-In</a>
+    </div>
+  </div> 
+  <div class="subnav">
+    <button class="subnavbtn">Data <i class="fa fa-caret-down"></i></button>
+    <div class="subnav-content">
+      <a href="sources.html">Sources</a>
+      <a href="str.html">Collection Strategies</a>
+      <a href="sum.html">Collection Summary</a>
+    </div>
+  </div>
+  <a href="about.html">About Us</a>
+</div>
+
+<style type="text/css">
+  table.tableizer-table {
+    font-size: 12px;
+    border: 1px solid #CCC; 
+    font-family: Arial, Helvetica, sans-serif;
+  } 
+  .tableizer-table td {
+    padding: 4px;
+    margin: 3px;
+    border: 1px solid #CCC;
+  }
+  .tableizer-table th {
+    background-color: #104E8B; 
+    color: #FFF;
+    font-weight: bold;
+  }
+</style>
+
+<h3>Data Groups and Operations</h3>
+<table class="tableizer-table">
+<thead><tr class="tableizer-firstrow"><th>China</th><th>&nbsp;</th><th>&nbsp;</th><th>&nbsp;</th><th>&nbsp;</th><th>&nbsp;</th><th>&nbsp;</th><th>&nbsp;</th><th>&nbsp;</th><th>&nbsp;</th><th>&nbsp;</th><th>&nbsp;</th><th>&nbsp;</th><th>&nbsp;</th><th>&nbsp;</th></tr></thead><tbody>
+ <tr><td>Common Name</td><td>CrowdStrike</td><td>IRL</td><td>Kaspersky</td><td>Secureworks</td><td>Mandiant</td><td>FireEye</td><td>Symantec</td><td>iSight</td><td>Cisco (Sourcefire/VRT > Talos)</td><td>Palo Alto Unit 42</td><td>Other Names</td><td>MITRE ATT&CK</td><td>Toolset / Malware</td><td>Targets</td></tr>
+ <tr><td>Comment Crew</td><td>Comment Panda</td><td>PLA Unit 61398</td><td>&nbsp;</td><td>TG-8223</td><td>APT1</td><td>&nbsp;</td><td>&nbsp;</td><td>BrownFox</td><td>Group 3</td><td>&nbsp;</td><td>GIF89a, ShadyRAT, Shanghai Group, Byzantine Candor</td><td>G0006</td><td>WEBC2, BISCUIT and many others</td><td>U.S. cybersecurity firm Mandiant, later purchased by FireEye, released a report in February 2013 that exposed one of China's cyber espionage units, Unit 61398. The group, which FireEye called APT1, is a unit within China's People's Liberation Army (PLA) that has been linked to a wide range of cyber operations targeting U.S. private sector entities for espionage purposes. The comprehensive report detailed evidence connecting APT1 and the PLA, offered insight into APT1's operational malware and methodologies, and provided timelines of the espionage it conducted.</td></tr>
+ <tr><td>APT2</td><td>Putter Panda</td><td>PLA Unit 61486</td><td>&nbsp;</td><td>TG-6952</td><td>APT2</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>Group 36</td><td>&nbsp;</td><td>SearchFire</td><td>G0024</td><td>Their activities are commonly known to be exploiting CVE-2012-0158 (MSOffice vulnerability in MSCOMCTL.OCX) in SpearPhising operations. Related malware: Moose, Warp, MSUpdater</td><td>This threat actor targets firms in the technology (communications, space, aerospace), research, defense, and government sectors in the United States for espionage purposes. The tools and infrastructure it uses overlap with PLA Unit 61398.</td></tr>
+ <tr><td>UPS</td><td>Gothic Panda</td><td>&nbsp;</td><td>&nbsp;</td><td>TG-0110</td><td>APT3</td><td>&nbsp;</td><td>Buckeye</td><td>UPS Team</td><td>Group 6</td><td>&nbsp;</td><td>Boyusec - the Guangzhou Boyu Information Technology Company, Ltd</td><td>G0022</td><td>Shotput, Pirpi, PlugX/Sogu, Kaba, Cookie Cutter, many 0days: IE, Firefox, and Flash, SportLoader, Shadow Brokers exploits, DoublePulsar, Bemstour, Filensfer</td><td>This threat actor targets and compromises entities in the defense, construction, technology, and transportation sectors. Up until 2015, it was primarily focused on U.S. and UK entities, but it shifted to Hong Kongâ€"based targets afterward. Aerospace and Defence; Construction and Engineering; Energy; High Tech; Nonprofit; Telecommunications; Transportation</td></tr>
+ <tr><td>IXESHE</td><td>Numbered Panda</td><td>&nbsp;</td><td>&nbsp;</td><td>TG-2754 (tentative)</td><td>APT12</td><td>BeeBus</td><td>&nbsp;</td><td>Calc Team</td><td>Group 22</td><td>&nbsp;</td><td>DynCalc, Crimson Iron, DNSCalc</td><td>G0005</td><td>Etumbot, Riptide, Hightide, ThreeByte, Waterspout, Mswab, Gh0st, ShowNews, 3001</td><td>This threat actor targets organizations in Japan, Taiwan, and elsewhere in East Asiaâ€"including electronics manufacturers and telecommunications companiesâ€"for espionage purposes.</td></tr>
+ <tr><td>APT16</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>APT16</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>G0023</td><td>ELMER backdoor, Gh0st, HTRAN, UNICAT,Poison Ivy, Pandora</td><td>This threat actor targets and compromises Japanese and Taiwanese entities in the finance, tech, media, and government sectors.</td></tr>
+ <tr><td>Hidden Lynx</td><td>Aurora Panda</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>APT17</td><td>Deputy Dog</td><td>Hidden Lynx</td><td>Tailgater Team</td><td>Group 8</td><td>&nbsp;</td><td>Axiom, SportsFans, Winnti Umbrella</td><td>G0025</td><td>BLACKCOFFEE, WEBCnC, Joy RAT, PlugX, Trojan.Naid, Backdoor.Moudoor, Backdoor.Vasport, Backdoor.Boda, Trojan.Hydraq, ZxShell, Sakula, China Chopper, DestroyRAT</td><td>Government, defense & aerospace, industrial engineering, NGOs</td></tr>
+ <tr><td>Wekby</td><td>Dynamite Panda</td><td>&nbsp;</td><td>&nbsp;</td><td>TG-0416</td><td>APT18</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>TA428</td><td>G0026</td><td>HTTPBrowser, TokenControl, HcdLoader, PisLoader, TManger</td><td>Aerospace and Defence; Construction and Engineering; Education; Health and Biotechnology; High Tech; Telecommunications; Transportation</td></tr>
+ <tr><td>Axiom</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>APT17</td><td>&nbsp;</td><td>&nbsp;</td><td>Tailgater Team</td><td>Group 72</td><td>&nbsp;</td><td>Dogfish (iDefense), Deputy Dog (iDefense), Winnti Umbrella</td><td>G0001</td><td>Winnti, Gh0st RAT, PoisonIvy, HydraQ, Hikit, ZxShell, Deputy Dog, Derusbi, PlugX, HTRAN, HDRoot, Fscan, Timestomper</td><td>&nbsp;</td></tr>
+ <tr><td>Winnti Group</td><td>Wicked Panda</td><td>&nbsp;</td><td>&nbsp;</td><td>BRONZE ATLAS</td><td>APT41</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>Winnti Umbrella, BARIUM, LEAD, RedEcho, Vanadinite</td><td>G0044</td><td>Winnti, AceHash, PlugX, Webshells, ZxShell, ShadowPad</td><td>ThyssenKrupp, Gameforge, Valve, Teamviewer,Siemens, Sumitomo, BASF, Covestro, Shin-Etsu, Bayer, Roche</td></tr>
+ <tr><td>Shell Crew</td><td>Deep Panda</td><td>&nbsp;</td><td>WebMasters</td><td>&nbsp;</td><td>APT19</td><td>KungFu Kittens</td><td>&nbsp;</td><td>&nbsp;</td><td>Group 13</td><td>&nbsp;</td><td>Sh3llCr3w, PinkPanther, Winnti Group</td><td>G0009</td><td>Sakula/Sakurel, Derusbi, Scanbox Framework, many Webshells including China Chopper, WCE</td><td>&nbsp;</td></tr>
+ <tr><td>Naikon</td><td>Lotus Panda</td><td>PLA Unit 78020</td><td>Naikon</td><td>&nbsp;</td><td>APT30</td><td>&nbsp;</td><td>Thrip</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>G0019</td><td>RARSTONE, BACKSPACe, NETEAGLE, XSControl</td><td>satellite communications operator, Telecoms, and Defense Companies, Hong Kong</td></tr>
+ <tr><td>Lotus Blossom</td><td>&nbsp;</td><td>&nbsp;</td><td>Spring Dragon</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>Lotus Blossom</td><td>ST Group, Esile</td><td>G0030</td><td>Elise Backdoor, Lstudio, CVE-2017-11882</td><td>&nbsp;</td></tr>
+ <tr><td>APT6</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>APT6</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>1.php Group</td><td>&nbsp;</td><td>Poison Ivy, </td><td>US Government Organizations</td></tr>
+ <tr><td>APT26</td><td>Turbine Panda</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>APT26</td><td>&nbsp;</td><td>&nbsp;</td><td>Hippo Team</td><td>&nbsp;</td><td>&nbsp;</td><td>JerseyMikes</td><td>&nbsp;</td><td>"Cobalt, QuickPulse, credential stealers </td></tr>
+ <tr><td>such as WCE, GSECDUMP, COATHOOK, HTRAN, SOGU, TWOCHAINS, QUICKBALL"</td><td>Affected Industry: Aerospace and Defense, business and Professional Services/Legal/Accounting, High Tech Software and hardware services</td></tr>
+ <tr><td>Mirage</td><td>Vixen Panda</td><td>Ke3Chang</td><td>Playful Dragon</td><td>GREF</td><td>APT15</td><td>&nbsp;</td><td>&nbsp;</td><td>Social Network Team</td><td>&nbsp;</td><td>&nbsp;</td><td>Mirage Team, Lurid, Social Network Team, Royal APT, Metushy, Winnti Umbrella</td><td>G0004</td><td>Mirage, (Nvidia program side-loading) PlugX, XSLCmd, TidePool, BS2005, RoyalCli, iWebRat, Russian-language decoy document, ENFAL, ENDCMD, QUICKHEAL, SOGU, CYFREE, MIRAGE, NOISEMAKER, QUICKHEAL, SWALLOWFLY</td><td>PH, VN, TW, US, UK, IT, PL, UN, SG, NATO - Gov, Political party</td></tr>
+ <tr><td>NetTraveler</td><td>&nbsp;</td><td>Lanzhou PLA Unit</td><td>NetTraveler</td><td>&nbsp;</td><td>APT21</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>NetTraveler</td><td>This threat actor targets computer networks associated with Tibetan and Uyghur activists for espionage purposes.</td></tr>
+ <tr><td>Ice Fog</td><td>Dagger Panda</td><td>&nbsp;</td><td>IceFog</td><td>&nbsp;</td><td>&nbsp;</td><td>ICEFOG</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>Fucobha, Temp.Trident</td><td>&nbsp;</td><td>Dagger Three (C2 software), Fucobha Backdoor, IceFog, RoyalRoad RTF Weaponizer</td><td>This threat actor targets government institutions, military contractors, maritime and shipbuilding groups, telecommunications operators, and others, primarily in US, Taiwan, Japan and South Korea.</td></tr>
+ <tr><td>Beijing Group</td><td>Sneaky Panda</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>Hydraq, SIG22, Elderwood, Elderwood Gang</td><td>G0066</td><td>Hydraq, Elderwood Project</td><td>This threat actor targets private sector companies in the defense, shipping, aeronautics, arms, and energy sectors, as well as nonprofits and financial firms.</td></tr>
+ <tr><td>APT22</td><td>Wet Panda</td><td>&nbsp;</td><td>&nbsp;</td><td>BRONZE OLIVE</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>Barista</td><td>&nbsp;</td><td>China Chopper, PISCES, SOGU, FLATNOTE, ANGRYBELL, BASELESS, SEAWOLF, LOGJAM</td><td>&nbsp;</td></tr>
+ <tr><td>Suckfly</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>G0039</td><td>Nidiran, Korplug, PlugX</td><td>Indian organisations and Republic of Korea</td></tr>
+ <tr><td>APT4</td><td>Samurai Panda</td><td>PLA Navy</td><td>&nbsp;</td><td>&nbsp;</td><td>APT4</td><td>APT4</td><td>&nbsp;</td><td>Wisp Team</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+ <tr><td>Pitty Tiger</td><td>Pitty Panda</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>Pitty Tiger</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>PittyTiger, Paladin RAT</td><td>&nbsp;</td></tr>
+ <tr><td>Scarlet Mimic</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>Scarlet Mimic</td><td>&nbsp;</td><td>G0029</td><td>FakeM, Psylo, MobileOrder</td><td>Uyghur and Tibetan activists as well as those who are interested in their causes</td></tr>
+ <tr><td>C0d0so</td><td>Codoso</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>APT19</td><td>Sunshop Group</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>G0073</td><td>Bergard Trojan, Derusbi, TXER</td><td>Forbes,  Defense, Finance, Energy, Government, Political Dissidents, Global Think Tanks</td></tr>
+ <tr><td>SVCMONDR</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>CVE-2015-2545</td><td>Taiwan, Thailand</td></tr>
+ <tr><td>Wisp Team</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>APT4</td><td>&nbsp;</td><td>&nbsp;</td><td>Wisp Team</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>Defense Industrial Base, US Government</td></tr>
+ <tr><td>Mana Team</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>Mana Team</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>Australia</td></tr>
+ <tr><td>TEMP.Zhenbao</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>TEMP.Zhenbao</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+ <tr><td>SPIVY</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>Hong Kong dissidents</td></tr>
+ <tr><td>Mofang</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>BRONZE WALKER</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>SingHealth</td><td>ShimRAT, ShimRATReporter</td><td>Government, military, Critical Infrastructure,Automotive Industry*,Weapon Industry*, This threat actor compromises government and critical infrastructure entities, primarily in Myanmar, for espionage purposes. Myanmar, Canada, United States, Germany, India, South Korea, Singapore</td></tr>
+ <tr><td>DragonOK</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>DragonOK</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>DragonOK</td><td>&nbsp;</td><td>G0017</td><td>CVE-2015-1641, Sysget, IsSpace, Rambo Backdoor</td><td>Japan</td></tr>
+ <tr><td>Group 27</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>Group 27</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>Trochilus RAT, PlugX, EvilGrab, 3102 variant of 9002 RAT</td><td>&nbsp;</td></tr>
+ <tr><td>Tonto Team</td><td>&nbsp;</td><td>&nbsp;</td><td>CactusPete</td><td>&nbsp;</td><td>&nbsp;</td><td>Tonto Team</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>RoyalRoad RTF Weaponizer</td><td>&nbsp;</td></tr>
+ <tr><td>TA459</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>G0062</td><td>PlugX, NetTraveler, ZeroT, PCrat, Gh0st, RoyalRoad RTF Weaponizer</td><td>Central Asian countries, Russia, Belarus, Mongolia, and others</td></tr>
+ <tr><td>Tick</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>BRONZE BUTLER</td><td>&nbsp;</td><td>&nbsp;</td><td>Tick</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>REDBALDKNIGHT</td><td>G0060</td><td>whoami, procdump, VBS, WCE, Mimikatz, gsecdump, PsExec, Daserf, Gofarer, Datper, ABK Downloader, avirra Downloader, Datper, RoyalRoad RTF Weaponizer</td><td>&nbsp;</td></tr>
+ <tr><td>Lucky Cat</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>Shadow Network, SabPub, TA413 (Proofpoint)</td><td>&nbsp;</td><td>&nbsp;</td><td>A threat actor targets computer networks associated with Tibetan activists, as well as military research and development, aerospace, engineering, and shipping industries in India and Japan.</td></tr>
+ <tr><td>APT40</td><td>Leviathan</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>APT40</td><td>Temp.Periscope</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>Temp.Jumper, GADOLINIUM, MUDCARP, Hainan Xiandun Technology Company</td><td>G0065</td><td>AIRBREAK, BADFLICK, PHOTO, HOMEFRY, LUNCHMONEY, MURKYTOP, China Chopper, Beacon, BLACKCOFFEE, CVE-2017-11882, Derusbi, RoyalRoad RTF Weaponizer</td><td>maritime-related targets across multiple verticals, including engineering firms, shipping and transportation, manufacturing, defense, government offices, and research universities</td></tr>
+ <tr><td>PassCV</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>TG-3279</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>Winnti Umbrella, China Cracking Group, </td><td>&nbsp;</td><td>Sabre, Kitkiot, Conpee, Etso, Runxx, dnsenum, s (custom port scanner), rdp_crk, icmp_shell, Jynxkit, Gh0st RAT, NetCommander, Carberp RAT</td><td>Gaming Companies</td></tr>
+ <tr><td>BARIUM</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>TG-2633</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>Winnti Umbrella, BRONZE ATLAS</td><td>&nbsp;</td><td>Winnti Rootkit malware</td><td>Electronic gaming, multimedia, Internet content industries, technology companies</td></tr>
+ <tr><td>LEAD</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>Winnti Umbrella</td><td>&nbsp;</td><td>Winnti Rootkit malware</td><td>Multinational, multi-industry companies, textiles, chemicals, electronics, pharmaceutical companies, manufacturing</td></tr>
+ <tr><td>Iron Group</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>Rocke</td><td>&nbsp;</td><td>XBash</td><td>Cybercrime, Cryptomining, Cryptojacking</td></tr>
+ <tr><td>Anchor Panda</td><td>Anchor Panda</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>Adobe Gh0st, Poison Ivy, Torn RAT</td><td>This threat actor targets government and private sector entities interested in maritime issues in the South China Sea for espionage purposes. Maritime satellite systems, aerospace companies, and defense contractors.</td></tr>
+ <tr><td>Big Panda</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>Financial services firms</td></tr>
+ <tr><td>Electric Panda</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+ <tr><td>Eloquent Panda</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+ <tr><td>Emissary Panda</td><td>Emissary Panda</td><td>&nbsp;</td><td>LuckyMouse</td><td>BRONZE UNION, TG-3390</td><td>APT27</td><td>&nbsp;</td><td>&nbsp;</td><td>TEMP.Hippo</td><td>Group 35</td><td>&nbsp;</td><td>ZipToken, Iron Tiger</td><td>G0027</td><td>PlugX, China Chopper Webshell, HttpBrowser, Hunter, ASPXTool, wce, gsecdump, nbtscan, htran</td><td>US Gov and contractors, Western think tanks</td></tr>
+ <tr><td>Foxy Panda</td><td>Foxy Panda</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>Technology & Communications</td></tr>
+ <tr><td>Gibberish Panda</td><td>Gibberish Panda</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td></tr>
+ <tr><td>Goblin Panda</td><td>Goblin Panda</td><td>Hellsing</td><td>Cycldek</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>Cycldek, Conimes Team, China1937CN Team, Temp.Conimes</td><td>&nbsp;</td><td>ZeGhost, PlugX, tempfun, NewCore RAT, Sisfader, RoyalRoad RTF Weaponizer, BlueCore, RedCore</td><td>Southeast Asia, Government of Vietnam</td></tr>
+ <tr><td>Hammer Panda</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>Russia</td></tr>
+ <tr><td>Hurricane Panda</td><td>Hurricane Panda</td><td>&nbsp;</td><td>&nbsp;</td><td>BRONZE VINEWOOD</td><td>APT31</td><td>&nbsp;</td><td>Black Vine</td><td>TEMP.Avengers</td><td>&nbsp;</td><td>&nbsp;</td><td>Zirconium</td><td>&nbsp;</td><td>China Chopper Webshell, PlugX, Mimikatz, Sakula</td><td>Aerospace, Healthcare, Energy (gas & electric turbine manufacturing), Military and defense, Finance, Agriculture, Technology, Japan, United States, United Kingdom, India, Canada, Brazil, South Africa, Australia, Thailand, South Korea, France, Switzerland, Sweden, Finland, Norway</td></tr>
+ <tr><td>Impersonating Panda</td><td>Impersonating Panda</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>Financial sector</td></tr>
+ <tr><td>Judgement Panda</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>Spear-phishing, URL "web bugs" and scheduled tasks to automate credential harvesting</td><td>Upstream providers (e.g., law firms and managed service providers) to support additional intrusions against high-profile assets</td></tr>
+ <tr><td>Karma Panda</td><td>Karma Panda</td><td>CactusPete</td><td>CactusPete</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>Tonto Team</td><td>&nbsp;</td><td>&nbsp;</td><td>Bisonal (malware), Lone Ranger</td><td>&nbsp;</td><td>&nbsp;</td><td>Dissident groups</td></tr>
+ <tr><td>Keyhole Panda</td><td>Keyhole Panda</td><td>&nbsp;</td><td>&nbsp;</td><td>Bronze Fleetwood </td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>temp.bottle</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>Electronics & Communications</td></tr>
+ <tr><td>Kryptonite Panda</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>8.t exploit document builder</td><td>Cambodia</td></tr>
+ <tr><td>Mustang Panda</td><td>&nbsp;</td><td>&nbsp;</td><td>HoneyMyte</td><td>BRONZE PRESIDENT</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>Temp.Hex</td><td>&nbsp;</td><td>&nbsp;</td><td>TA416, RedDelta</td><td>&nbsp;</td><td>Cobalt Strike, PlugX, ORat, RCSession, Nbtscan, Nmap, Wmiexec, China Chopper web shell </td><td>Mining sector in Mongolia, private individuals |=| gathering geo-political and economic intelligence, NGOs, political & law enforcement org in South and East Asia</td></tr>
+ <tr><td>Night Dragon</td><td>Night Dragon</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>&nbsp;</td><td>G0014</td><td>&nbsp;</td><td>A threat actor compromised U.S. oil companies through spear phishing and remote administration tools. Oil, Energy and Petrochemical (OpNightDragon)</td></tr>
+</tbody></table>
+
+ <footer>
+    <p>Disclaimer: All content on this site is for educational purposesonly.</p>
+  <footer>
+
+</body>
+</html>
